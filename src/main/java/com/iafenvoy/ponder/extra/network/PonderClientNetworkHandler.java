@@ -26,7 +26,7 @@ public class PonderClientNetworkHandler implements ClientPlayNetworking.PlayChan
 	}
 
 	public static void register() {
-		ClientPlayNetworking.registerReceiver(CHANNEL_NAME, INSTANCE);
+		ClientPlayNetworking.registerGlobalReceiver(CHANNEL_NAME, INSTANCE);
 		INSTANCE.registerMessage(SConfigureConfigPacket::new);
 	}
 
